@@ -1,4 +1,4 @@
-"""
+
 import smtplib
 import imaplib
 import email
@@ -13,7 +13,7 @@ recipient_email = "recipient@example.com"
 smtp_server = "smtp.example.com"
 imap_server = "imap.example.com"
 keyword = "phishing"
-attachment_file_path = "/path/to/attachment/file"
+#attachment_file_path = "/path/to/attachment/file"
 
 # Send an email with an attachment
 def send_email():
@@ -21,7 +21,7 @@ def send_email():
     msg['From'] = sender_email
     msg['To'] = recipient_email
     msg['Subject'] = "Test Email with Attachment"
-    with open(/jagaban/antenna.pdf, "rb") as attachment:
+   # with open(/jagaban/antenna.pdf, "rb") as attachment:
         p = MIMEBase('application', 'octet-stream')
         p.set_payload((attachment).read())
         encoders.encode_base64(p)
@@ -71,4 +71,3 @@ def check_email():
 if __name__ == '__main__':
     send_email()
     check_email()
-"""
