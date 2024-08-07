@@ -1,3 +1,4 @@
+"""
 import smtplib
 import imaplib
 import email
@@ -70,3 +71,4 @@ def check_email():
 if __name__ == '__main__':
     send_email()
     check_email()
+"""
